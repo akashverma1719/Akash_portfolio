@@ -4463,3 +4463,78 @@ body.light .cta{
 body{
     top:0 !important;
 }
+/*=========================================
+        MOBILE NAVBAR (KEEP SAME ROW)
+=========================================*/
+
+@media (max-width:768px){
+
+    .navbar{
+        padding:12px 15px;
+    }
+
+    /* Logo chhota */
+    .logo{
+        font-size:30px;
+    }
+
+    /* Actions same row me */
+    .nav-actions{
+        display:flex;
+        align-items:center;
+        gap:8px;
+        flex-direction:row;
+    }
+
+    /* Theme Button */
+    #themeBtn{
+        width:36px;
+        height:36px;
+        font-size:14px;
+        border-radius:10px;
+    }
+
+    /* Language */
+    #languageSwitcher{
+        width:95px;
+        min-width:95px;
+        height:36px;
+        font-size:13px;
+        padding:0 28px 0 10px;
+        border-radius:10px;
+        background-position:right 8px center;
+        background-size:12px;
+    }
+
+    /* Resume Button */
+    .nav-actions .btn{
+        height:36px;
+        padding:0 14px;
+        font-size:13px;
+        border-radius:10px;
+    }
+
+}
+@media(max-width:768px){
+
+.resume-btn{
+
+    width:38px;
+    height:38px;
+    padding:0;
+
+}
+
+.resume-btn span{
+
+    display:none;
+
+}
+
+.resume-btn i{
+
+    font-size:15px;
+
+}
+
+}
