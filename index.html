@@ -2,399 +2,778 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Akash Verma | Full Stack .NET Developer</title>
-    <meta name="description" content="Akash Verma - Full Stack .NET Developer Portfolio">
+
+    <meta name="description"
+        content="Akash Verma - Full Stack .NET Developer specializing in ASP.NET MVC, .NET Core, C#, SQL Server, Web API and Angular.">
+
+    <meta name="keywords"
+        content=".NET Developer, ASP.NET MVC, C#, SQL Server, Portfolio, Full Stack Developer">
+
+    <meta name="author" content="Akash Verma">
+
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Akash Verma | Full Stack .NET Developer">
+
+    <meta property="og:description"
+        content="Professional Portfolio of Akash Verma">
+
+    <meta property="og:image"
+        content="assets/images/preview.png">
+
+    <meta property="og:type" content="website">
+
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-<!-- AOS -->
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="assets/images/favicon.png">
-<meta name="theme-color" content="#0f172a">
-<meta property="og:title"content="Akash Verma | Full Stack .NET Developer">
-<meta property="og:description" content="Professional Portfolio of Akash Verma">
-<meta property="og:image" content="assets/images/preview.png">
-<meta property="og:type" content="website">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- AOS -->
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
 </head>
 
 <body>
+
+<!--==================== Loader ====================-->
+
 <div id="loader">
 
     <div class="loader-content">
 
         <h1>
 
-            Akash<span>.</span>
+            Akash<span></span>
 
         </h1>
 
         <div class="loader-bar">
 
-            <div class="loader-progress">
-
-            </div>
+            <div class="loader-progress"></div>
 
         </div>
+
+        <p>Loading Portfolio...</p>
 
     </div>
 
 </div>
 
-    <!-- ================= NAVBAR ================= -->
+<!--==================== Header ====================-->
 
-    <header>
+<header>
 
-    <nav class="navbar">
+<nav class="navbar">
 
-        <div class="logo">
-            Akash<span>.</span>
-        </div>
+<div class="logo">
 
-        <!-- Mobile Button -->
+Akash<span></span>
 
-        <div class="menu-btn" id="menuBtn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+</div>
 
-        <ul class="nav-links" id="navLinks">
+<!-- Mobile -->
 
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certificates">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
+<div class="menu-btn" id="menuBtn">
 
-        </ul>
+<i class="fa-solid fa-bars"></i>
 
-        <div class="nav-actions">
+</div>
 
-            <button id="themeBtn">
-                <i class="fa-solid fa-moon"></i>
-            </button>
+<ul class="nav-links" id="navLinks">
 
-<!-- Language -->
+<li><a href="#home">Home</a></li>
 
-    <select id="languageSwitcher">
+<li><a href="#about">About</a></li>
 
-        <option value="">🌐 Language</option>
+<li><a href="#skills">Skills</a></li>
 
-        <option value="en">🇺🇸 English</option>
+<li><a href="#projects">Projects</a></li>
 
-        <option value="hi">🇮🇳 हिन्दी</option>
+<li><a href="#experience">Experience</a></li>
 
-        <option value="fr">🇫🇷 Français</option>
+<li><a href="#contact">Contact</a></li>
 
-        <option value="de">🇩🇪 Deutsch</option>
+</ul>
 
-        <option value="es">🇪🇸 Español</option>
+<div class="nav-actions">
 
-        <option value="ja">🇯🇵 日本語</option>
+<button id="themeBtn">
 
-        <option value="zh-CN">🇨🇳 中文</option>
+<i class="fa-solid fa-moon"></i>
 
-        <option value="ar">🇸🇦 العربية</option>
+</button>
 
-    </select>
+<select style = "display:none" id="languageSwitcher" aria-label="Select Language">
 
-            <a href="assets/resume.pdf" class="btn" download>
-                Resume
-            </a>
+<option value="en">🇺🇸 English</option>
 
-        </div>
-<!-- Hidden Google Translate -->
+<option value="hi">🇮🇳 हिन्दी</option>
 
-<div id="google_translate_element" style="display:none;"></div>
+<option value="fr">🇫🇷 Français</option>
 
+<option value="de">🇩🇪 Deutsch</option>
 
-    </nav>
+<option value="es">🇪🇸 Español</option>
+
+<option value="ja">🇯🇵 日本語</option>
+
+<option value="zh-CN">🇨🇳 中文</option>
+
+<option value="ar">🇸🇦 العربية</option>
+
+</select>
+
+<a href="assets/resume.pdf"
+class="resume-btn"
+download>
+
+<i class="fa-solid fa-download"></i>
+
+<span>Resume</span>
+
+</a>
+
+</div>
+
+</nav>
 
 </header>
 
+<!--==================== Hero ====================-->
 
+<section class="hero" id="home">
 
-    <!-- ================= HERO ================= -->
+<div class="container hero-wrapper">
 
-    <section class="hero" id="home">
+<!-- Left -->
 
-        <div class="hero-left">
+<div class="hero-left"
+data-aos="fade-right">
 
-            <p class="hello">
+<div class="badge">
 
-                👋 Hello, I'm
+🟢 Available for Work
 
-            </p>
+</div>
 
-            <h1>
+<h3 class="hello">
 
-                Akash Verma
+Hello, I'm
 
-            </h1>
+</h3>
 
-            <h2>
+<h1>
 
-                <span id="typing"></span>
+Akash Verma
 
-            </h2>
+</h1>
 
-            <p class="description">
+<h2>
 
-                Passionate Full Stack .NET Developer with 4+ years of
-                experience building enterprise web applications using
-                C#, ASP.NET MVC, Web API, SQL Server and JavaScript.
+<span id="typing"></span>
 
-            </p>
+</h2>
 
-            <div class="buttons">
+<p class="description">
 
-                <a href="#contact" class="btn-primary">
+Passionate Full Stack .NET Developer with 4+ years of
+experience in building scalable Government and Enterprise
+applications using ASP.NET MVC, .NET Core, C#, SQL Server,
+REST API, Angular and JavaScript.
 
-                    Contact Me
+</p>
 
-                </a>
+<div class="hero-buttons buttons">
 
-                <a href="#projects" class="btn-secondary">
+<a href="#contact"
+class="btn-primary">
 
-                    View Projects
+Contact Me
 
-                </a>
+</a>
 
-            </div>
+<a href="#projects"
+class="btn-secondary">
 
-            <!-- Social -->
+View Projects
 
-            <div class="social">
+</a>
 
-                <a href="https://github.com/akashverma1719"><i class="fab fa-github"></i></a>
+</div>
 
-                <a href="https://www.linkedin.com/in/akash-verma-5b7303209/"><i class="fab fa-linkedin"></i></a>
+<div class="hero-social social">
 
-                <a href="mailto:acpakashverma@gmail.com">
+<a href="https://github.com/akashverma1719"
+target="_blank" rel="noopener noreferrer">
 
-                    <i class="fas fa-envelope"></i>
+<i class="fab fa-github"></i>
 
-                </a>
+</a>
 
-            </div>
+<a href="https://www.linkedin.com/in/akash-verma-5b7303209/"
+target="_blank" rel="noopener noreferrer">
 
-            <!-- Statistics -->
+<i class="fab fa-linkedin"></i>
 
-            <div class="stats">
+</a>
 
-                <div class="card">
+<a href="mailto:acpakashverma@gmail.com">
 
-                    <h3>4+</h3>
+<i class="fa-solid fa-envelope"></i>
 
-                    <p>Years Experience</p>
+</a>
 
-                </div>
+</div>
 
-                <div class="card">
+<div class="hero-stats stats">
 
-                    <h3>6+</h3>
+<div class="stat-box card">
 
-                    <p>Projects</p>
+<h3>4+</h3>
 
-                </div>
+<p>Years Experience</p>
 
-                <div class="card">
+</div>
 
-                    <h3>10+</h3>
+<div class="stat-box card">
 
-                    <p>Technologies</p>
+<h3>10+</h3>
 
-                </div>
+<p>Technologies</p>
 
-                <div class="card">
+</div>
 
-                    <h3>100%</h3>
+<div class="stat-box card">
 
-                    <p>Commitment</p>
+<h3>6+</h3>
 
-                </div>
+<p>Projects</p>
 
-            </div>
+</div>
 
-        </div>
+<div class="stat-box card">
 
+<h3>100%</h3>
 
+<p>Commitment</p>
 
-        <!-- Profile -->
+</div>
 
-        <div class="hero-right">
+</div>
 
-            <img src="assets/images/akash.png" alt="Akash Verma">
+</div>
 
-        </div>
+<!-- Right -->
 
-    </section>
+<div class="hero-right"
+data-aos="fade-left">
 
+<div class="hero-photo-card">
 
+<img src="assets/images/akash.png"
+alt="Akash Verma"
+loading="lazy">
 
-    <!-- Scroll Down -->
+<div class="experience-card">
 
-    <div class="scroll-down">
+<h3>
 
-        <a href="#about">
+Software Engineer
 
-            <i class="fa-solid fa-angles-down"></i>
+</h3>
 
-        </a>
+<p>
 
-    </div>
+Akiko Sherman Infotech Pvt. Ltd.
 
+</p>
 
+</div>
 
-    <!-- ================= ABOUT SECTION ================= -->
+</div>
 
-   <!-- ================= ABOUT ================= -->
+</div>
 
-<section class="about" id="about">
-    <div class="container">
-        <div class="about-left">
-            <img src="assets/images/akash.png" alt="Akash Verma">
-        </div>
+</div>
 
-        <div class="about-right">
-            <h5>About Me</h5>
-
-            <h2>
-                Passionate Full Stack .NET Developer
-            </h2>
-
-            <p>
-                I'm Akash Verma, a passionate Full Stack .NET Developer with
-                4+ years of experience in developing enterprise web
-                applications using ASP.NET MVC, C#, SQL Server,
-                Web API, JavaScript and Bootstrap.
-            </p>
-
-            <div class="about-boxes">
-
-                <div class="about-card">
-                    <h3>4+</h3>
-                    <span>Years Experience</span>
-                </div>
-
-                <div class="about-card">
-                    <h3>6+</h3>
-                    <span>Projects</span>
-                </div>
-
-                <div class="about-card">
-                    <h3>10+</h3>
-                    <span>Technologies</span>
-                </div>
-
-            </div>
-
-            <a href="assets/resume.pdf"
-               class="btn-primary"
-               download>
-                Download Resume
-            </a>
-
-        </div>
-    </div>
 </section>
 
-<!-- ================= SKILLS ================= -->
+<!-- Scroll -->
 
-<section class="skills" id="skills">
+<div class="scroll-down">
 
-    <div class="section-heading">
-        <h5>My Skills</h5>
-        <h2>Technical Skills</h2>
-    </div>
+<a href="#about">
 
-    <div class="container skills-wrapper">
+<i class="fa-solid fa-angles-down"></i>
+
+</a>
+
+</div>
+<!-- ================= ABOUT ================= -->
+
+<section class="about section" id="about">
+
+    <div class="container about-wrapper">
 
         <!-- Left -->
-        <div>
 
-            <div class="skill-item">
-                <div class="skill-title">
-                    <span>C#</span>
-                    <span>95%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" style="width:95%"></div>
-                </div>
-            </div>
+        <div class="about-image about-left" data-aos="fade-right">
 
-            <div class="skill-item">
-                <div class="skill-title">
-                    <span>ASP.NET MVC</span>
-                    <span>95%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" style="width:95%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-title">
-                    <span>SQL Server</span>
-                    <span>90%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" style="width:90%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-title">
-                    <span>Web API</span>
-                    <span>90%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" style="width:90%"></div>
-                </div>
-            </div>
+            <img src="assets/images/akash.png"
+                alt="Akash Verma"
+                loading="lazy">
 
         </div>
 
         <!-- Right -->
 
-        <div class="tech-grid">
+        <div class="about-content about-right"
+            data-aos="fade-left">
 
-            <div class="tech-card">
-                <i class="fa-brands fa-microsoft"></i>
-                <h4>.NET</h4>
+            <h5>About Me</h5>
+
+            <h2>
+                Full Stack .NET Developer
+            </h2>
+
+            <p>
+
+                I am Akash Verma, a passionate Full Stack .NET Developer
+                with 4+ years of experience in developing Government,
+                Enterprise and Business applications using ASP.NET MVC,
+                .NET Core, C#, SQL Server, Angular, JavaScript and REST APIs.
+
+            </p>
+
+            <div class="about-info about-boxes">
+
+                <div class="info-card about-card">
+
+                    <h3>4+</h3>
+
+                    <span>
+                        Years Experience
+                    </span>
+
+                </div>
+
+                <div class="info-card about-card">
+
+                    <h3>6+</h3>
+
+                    <span>
+                        Enterprise Projects
+                    </span>
+
+                </div>
+
+                <div class="info-card about-card">
+
+                    <h3>10+</h3>
+
+                    <span>
+                        Technologies
+                    </span>
+
+                </div>
+
+                <div class="info-card about-card">
+
+                    <h3>100%</h3>
+
+                    <span>
+                        Client Satisfaction
+                    </span>
+
+                </div>
+
             </div>
 
-            <div class="tech-card">
+            <a href="assets/resume.pdf"
+                class="btn-primary"
+                download>
+
+                Download Resume
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills section"
+    id="skills">
+
+    <div class="container">
+
+        <div class="section-title section-heading">
+
+            <h5>My Skills</h5>
+
+            <h2>
+                Professional Skills
+            </h2>
+
+            <p>
+
+                Technologies I use to build modern enterprise applications.
+
+            </p>
+
+        </div>
+
+        <div class="skills-wrapper">
+
+            <!-- Progress -->
+
+            <div class="skills-left">
+
+                <div class="skill skill-item">
+
+                    <div class="skill-title">
+
+                        <span>C#</span>
+
+                        <span>95%</span>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar"
+                            style="width:95%">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill skill-item">
+
+                    <div class="skill-title">
+
+                        <span>ASP.NET MVC</span>
+
+                        <span>95%</span>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar"
+                            style="width:95%">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill skill-item">
+
+                    <div class="skill-title">
+
+                        <span>.NET Core</span>
+
+                        <span>90%</span>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar"
+                            style="width:90%">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill skill-item">
+
+                    <div class="skill-title">
+
+                        <span>SQL Server</span>
+
+                        <span>92%</span>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar"
+                            style="width:92%">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill skill-item">
+
+                    <div class="skill-title">
+
+                        <span>Angular</span>
+
+                        <span>85%</span>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar"
+                            style="width:85%">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill skill-item">
+
+                    <div class="skill-title">
+
+                        <span>REST API</span>
+
+                        <span>90%</span>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar"
+                            style="width:90%">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Tech Cards -->
+
+            <div class="skills-right">
+
+                <div class="tech-grid">
+
+                    <div class="tech-card">
+
+                        <i class="fa-brands fa-microsoft"></i>
+
+                        <h4>.NET</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <h4>C#</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <h4>SQL Server</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-brands fa-angular"></i>
+
+                        <h4>Angular</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-brands fa-js"></i>
+
+                        <h4>JavaScript</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-brands fa-html5"></i>
+
+                        <h4>HTML5</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-brands fa-css3-alt"></i>
+
+                        <h4>CSS3</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-brands fa-bootstrap"></i>
+
+                        <h4>Bootstrap</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-brands fa-git-alt"></i>
+
+                        <h4>Git</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-solid fa-server"></i>
+
+                        <h4>REST API</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <h4>PostgreSQL</h4>
+
+                    </div>
+
+                    <div class="tech-card">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        <h4>Visual Studio</h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services section">
+
+    <div class="container">
+
+        <div class="section-title section-heading">
+
+            <h5>Services</h5>
+
+            <h2>
+                What I Do
+            </h2>
+
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+                <h3>Web Development</h3>
+
+                <p>
+
+                    Enterprise Web Applications using ASP.NET MVC,
+                    .NET Core and Angular.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-server"></i>
+
+                <h3>REST API Development</h3>
+
+                <p>
+
+                    Secure REST APIs with JWT Authentication,
+                    CRUD and Database Integration.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
                 <i class="fa-solid fa-database"></i>
-                <h4>SQL Server</h4>
+
+                <h3>Database Design</h3>
+
+                <p>
+
+                    SQL Server, PostgreSQL,
+                    Stored Procedures and Optimization.
+
+                </p>
+
             </div>
 
-            <div class="tech-card">
-                <i class="fa-brands fa-js"></i>
-                <h4>JavaScript</h4>
-            </div>
+            <div class="service-card">
 
-            <div class="tech-card">
-                <i class="fa-brands fa-html5"></i>
-                <h4>HTML5</h4>
-            </div>
+                <i class="fa-solid fa-bug"></i>
 
-            <div class="tech-card">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h4>CSS3</h4>
-            </div>
+                <h3>Bug Fixing</h3>
 
-            <div class="tech-card">
-                <i class="fa-brands fa-git-alt"></i>
-                <h4>Git</h4>
+                <p>
+
+                    Performance Optimization,
+                    Error Resolution and Code Refactoring.
+
+                </p>
+
             </div>
 
         </div>
@@ -404,13 +783,11 @@
 </section>
 <!-- ================= PROJECTS ================= -->
 
-<!-- ================= PROJECTS ================= -->
-
-<section class="projects" id="projects">
+<section class="projects section" id="projects">
 
     <div class="container">
 
-        <div class="section-heading">
+        <div class="section-title section-heading">
 
             <h5>Portfolio</h5>
 
@@ -418,7 +795,7 @@
 
             <p>
                 Government and Enterprise Applications developed using
-                ASP.NET MVC, C#, SQL Server and Web API.
+                ASP.NET MVC, .NET Core, C#, SQL Server and REST APIs.
             </p>
 
         </div>
@@ -427,32 +804,25 @@
 
             <!-- Project 1 -->
 
-            <div class="project-card">
+            <div class="project-card" data-aos="zoom-in">
 
                 <div class="project-icon">
-
                     <i class="fa-solid fa-droplet"></i>
-
                 </div>
 
                 <h3>Atal Bhujal Yojana</h3>
 
                 <p>
-
-                    Government of India groundwater management portal
-                    with reports, dashboards, authentication,
-                    MIS modules and data management.
-
+                    Government of India portal for groundwater management,
+                    dashboards, MIS reports, authentication and village level
+                    monitoring system.
                 </p>
 
                 <div class="project-tech">
 
                     <span>ASP.NET MVC</span>
-
                     <span>C#</span>
-
                     <span>SQL Server</span>
-
                     <span>Web API</span>
 
                 </div>
@@ -461,31 +831,24 @@
 
             <!-- Project 2 -->
 
-            <div class="project-card">
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
 
                 <div class="project-icon">
-
-                    <i class="fa-solid fa-wheat-awn"></i>
-
+                    <i class="fa-solid fa-building-columns"></i>
                 </div>
 
-                <h3>DFPD</h3>
+                <h3>DFPD Portal</h3>
 
                 <p>
-
-                    Department of Food & Public Distribution portal
-                    developed for food security and public distribution
-                    management.
-
+                    Department of Food & Public Distribution portal for
+                    managing food security, ration distribution and reports.
                 </p>
 
                 <div class="project-tech">
 
                     <span>.NET</span>
-
                     <span>MVC</span>
-
-                    <span>SQL</span>
+                    <span>SQL Server</span>
 
                 </div>
 
@@ -493,30 +856,23 @@
 
             <!-- Project 3 -->
 
-            <div class="project-card">
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
 
                 <div class="project-icon">
-
                     <i class="fa-solid fa-anchor"></i>
-
                 </div>
 
                 <h3>Indian Navy Exam Portal</h3>
 
                 <p>
-
-                    Recruitment examination portal with online
-                    registration, candidate management
-                    and reporting system.
-
+                    Online recruitment portal with registration,
+                    application management, reports and candidate verification.
                 </p>
 
                 <div class="project-tech">
 
                     <span>C#</span>
-
                     <span>ASP.NET</span>
-
                     <span>SQL Server</span>
 
                 </div>
@@ -525,30 +881,23 @@
 
             <!-- Project 4 -->
 
-            <div class="project-card">
+            <div class="project-card" data-aos="zoom-in">
 
                 <div class="project-icon">
-
                     <i class="fa-solid fa-bolt"></i>
-
                 </div>
 
-                <h3>CEA</h3>
+                <h3>CEA Portal</h3>
 
                 <p>
-
-                    Central Electricity Authority portal for
-                    electricity planning, reports and
-                    data management.
-
+                    Central Electricity Authority enterprise solution
+                    for planning, reporting and electricity data management.
                 </p>
 
                 <div class="project-tech">
 
-                    <span>MVC</span>
-
-                    <span>Web API</span>
-
+                    <span>.NET</span>
+                    <span>REST API</span>
                     <span>SQL</span>
 
                 </div>
@@ -557,31 +906,24 @@
 
             <!-- Project 5 -->
 
-            <div class="project-card">
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
 
                 <div class="project-icon">
-
                     <i class="fa-solid fa-water"></i>
-
                 </div>
 
-                <h3>THDC</h3>
+                <h3>THDC India</h3>
 
                 <p>
-
-                    Enterprise application developed for
-                    hydro power project management
-                    and operational reporting.
-
+                    Hydro Power project monitoring application with
+                    dashboard, reporting and management modules.
                 </p>
 
                 <div class="project-tech">
 
-                    <span>.NET</span>
-
-                    <span>SQL Server</span>
-
+                    <span>.NET Core</span>
                     <span>Bootstrap</span>
+                    <span>SQL Server</span>
 
                 </div>
 
@@ -589,31 +931,24 @@
 
             <!-- Project 6 -->
 
-            <div class="project-card">
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
 
                 <div class="project-icon">
-
                     <i class="fa-solid fa-earth-asia"></i>
-
                 </div>
 
                 <h3>Kreate Oman</h3>
 
                 <p>
-
-                    International business solution for
-                    Oman clients with responsive
-                    enterprise web application.
-
+                    International business application developed for
+                    Oman clients with responsive UI and REST APIs.
                 </p>
 
                 <div class="project-tech">
 
                     <span>.NET Core</span>
-
-                    <span>API</span>
-
-                    <span>SQL</span>
+                    <span>Angular</span>
+                    <span>SQL Server</span>
 
                 </div>
 
@@ -624,93 +959,61 @@
     </div>
 
 </section>
+
 <!-- ================= EXPERIENCE ================= -->
 
-<section class="experience" id="experience">
+<section class="experience section" id="experience">
 
     <div class="container">
 
-        <div class="section-heading">
+        <div class="section-title section-heading">
 
             <h5>Experience</h5>
 
             <h2>Professional Journey</h2>
 
             <p>
-                4+ years of experience in developing enterprise applications,
-                government solutions and scalable backend systems.
+                4+ years of experience building enterprise and government applications.
             </p>
 
         </div>
 
         <div class="timeline">
 
-            <!-- Current Company -->
+            <!-- Current -->
 
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-right">
 
                 <div class="timeline-dot"></div>
 
                 <div class="timeline-content">
 
                     <span class="timeline-date">
-                        January 2026 - Present
+
+                        Jan 2026 - Present
+
                     </span>
 
-                    <h3>Software Developer</h3>
+                    <h3>Software Engineer</h3>
 
-                    <h4>🏢 Akiko Sherman Infotech Pvt. Ltd.</h4>
+                    <h4>Akiko Sherman Infotech Pvt. Ltd.</h4>
 
                     <p>
-                        Currently working as a Full Stack .NET Developer,
-                        developing enterprise applications using ASP.NET MVC,
-                        .NET Core, C#, SQL Server and REST APIs.
+
+                        Working as Full Stack .NET Developer using
+                        ASP.NET Core, MVC, Angular, SQL Server,
+                        REST APIs and Git.
+
                     </p>
 
                     <div class="experience-tags">
 
                         <span>.NET Core</span>
-<span>ASP.NET Core</span>
-<span>Angular</span>
+                        <span>Angular</span>
                         <span>ASP.NET MVC</span>
-                        <span>C#</span>
                         <span>SQL Server</span>
                         <span>REST API</span>
                         <span>Git</span>
-
-                    </div>
-
-                    <div class="experience-achievements">
-
-                        <div>
-                            <i class="fa-solid fa-check"></i>
-                            Enterprise Applications
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-check"></i>
-                            API Development
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-check"></i>
-                            Database Optimization
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-check"></i>
-                            Agile Development
-                        </div>
-<div>
-                            <i class="fa-solid fa-check"></i>
-                            Bhuneer App
-                        </div>
-<div>
-                            <i class="fa-solid fa-check"></i>
-                            Atal Bhujal Youjana
-                        </div>
-
-
 
                     </div>
 
@@ -718,71 +1021,41 @@
 
             </div>
 
-            <!-- Previous Company -->
+            <!-- Previous -->
 
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-left">
 
                 <div class="timeline-dot"></div>
 
                 <div class="timeline-content">
 
                     <span class="timeline-date">
-                        December 2021 - December 2025
+
+                        Dec 2021 - Dec 2025
+
                     </span>
 
                     <h3>Software Developer</h3>
 
-                    <h4>🏢 Kreate Technologies Pvt. Ltd.</h4>
+                    <h4>Kreate Technologies Pvt. Ltd.</h4>
 
                     <p>
-                        Developed enterprise web applications for multiple
-                        Government departments using ASP.NET MVC,
-                        C#, SQL Server, Entity Framework and Web API.
+
+                        Developed Government applications including
+                        Atal Bhujal Yojana, DFPD, Indian Navy,
+                        THDC, CEA and Kreate Oman.
+
                     </p>
 
                     <div class="experience-tags">
 
                         <span>ASP.NET MVC</span>
-<span>ASP.NET Core</span>
+                        <span>.NET Core</span>
                         <span>C#</span>
+                        <span>Entity Framework</span>
                         <span>SQL Server</span>
-                        <span>Web API</span>
-                        <span>JavaScript</span>
                         <span>Bootstrap</span>
-
-                    </div>
-
-                    <div class="experience-achievements">
-
-                        <div>
-                            <i class="fa-solid fa-check"></i>
-                            Atal Bhujal Youjana
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-check"></i>
-                            DFPD
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-check"></i>
-                            Indian Navy
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-check"></i>
-                            CEA
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-check"></i>
-                            THDC
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-check"></i>
-                            Kreate Oman
-                        </div>
+                        <span>JavaScript</span>
 
                     </div>
 
@@ -797,41 +1070,53 @@
 </section>
 <!-- ================= EDUCATION ================= -->
 
-<section class="education">
+<section class="education section" id="education">
 
     <div class="container">
 
-        <div class="section-heading">
+        <div class="section-title section-heading">
 
             <h5>Education</h5>
 
             <h2>Academic Qualification</h2>
 
+            <p>
+                My educational background in Computer Applications.
+            </p>
+
         </div>
 
         <div class="education-grid">
 
-            <div class="education-card">
+            <div class="education-card" data-aos="fade-up">
 
-                <h3>Master of Computer Applications</h3>
+                <div class="edu-icon education-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
 
-                <h4>Shri Ram Group of College</h4>
+                <h3>Master of Computer Applications (MCA)</h3>
+
+                <h4>Shri Ram Group of Colleges</h4>
 
                 <span>2020 - 2022</span>
 
-                <p>Muzaffarnagar</p>
+                <p>Muzaffarnagar, Uttar Pradesh</p>
 
             </div>
 
-            <div class="education-card">
+            <div class="education-card" data-aos="fade-up" data-aos-delay="100">
 
-                <h3>Bachelor of Computer Applications</h3>
+                <div class="edu-icon education-icon">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
 
-                <h4>Shri Ram Group of College</h4>
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+
+                <h4>Shri Ram Group of Colleges</h4>
 
                 <span>2017 - 2020</span>
 
-                <p>Muzaffarnagar</p>
+                <p>Muzaffarnagar, Uttar Pradesh</p>
 
             </div>
 
@@ -840,27 +1125,28 @@
     </div>
 
 </section>
-<!-- ================= CERTIFICATES ================= -->
 
-<section class="certificates" id="certificates">
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section class="certificates section" id="certificates">
 
     <div class="container">
 
-        <div class="section-heading">
+        <div class="section-title section-heading">
 
             <h5>Achievements</h5>
 
-            <h2>Certificates & Highlights</h2>
+            <h2>Certificates & Professional Highlights</h2>
 
             <p>
-                Professional achievements and key highlights from my software development career.
+                My experience, achievements and technical expertise.
             </p>
 
         </div>
 
         <div class="certificate-grid">
 
-            <div class="certificate-card">
+            <div class="certificate-card" data-aos="zoom-in">
 
                 <i class="fa-solid fa-code"></i>
 
@@ -872,62 +1158,86 @@
 
             </div>
 
-            <div class="certificate-card">
+            <div class="certificate-card" data-aos="zoom-in" data-aos-delay="100">
 
                 <i class="fa-solid fa-building-columns"></i>
 
                 <h3>Government Projects</h3>
 
                 <p>
-                    Successfully worked on multiple Government enterprise applications.
+                    Successfully worked on multiple Government Enterprise Applications.
                 </p>
 
             </div>
 
-            <div class="certificate-card">
+            <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
 
                 <i class="fa-solid fa-server"></i>
 
                 <h3>Enterprise Applications</h3>
 
                 <p>
-                    Developed scalable web applications using .NET technologies.
+                    Designed and developed scalable enterprise software solutions.
                 </p>
 
             </div>
 
-            <div class="certificate-card">
+            <div class="certificate-card" data-aos="zoom-in">
 
                 <i class="fa-solid fa-database"></i>
 
-                <h3>Database Design</h3>
+                <h3>Database Expert</h3>
 
                 <p>
-                    Strong experience with SQL Server, PostgreSQL and Entity Framework.
+                    SQL Server, PostgreSQL, Stored Procedures & Performance Optimization.
                 </p>
 
             </div>
 
-            <div class="certificate-card">
+            <div class="certificate-card" data-aos="zoom-in" data-aos-delay="100">
 
                 <i class="fa-solid fa-cloud"></i>
 
-                <h3>REST APIs</h3>
+                <h3>REST API Development</h3>
 
                 <p>
-                    Designed and integrated REST APIs for enterprise systems.
+                    Secure REST APIs with Authentication and Enterprise Integration.
                 </p>
 
             </div>
 
-            <div class="certificate-card">
+            <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
 
                 <i class="fa-solid fa-users"></i>
 
                 <h3>Team Collaboration</h3>
 
                 <p>
-                    Worked in Agile teams with Git-based development workflow.
+                    Agile Development, Git Version Control and Team Collaboration.
+                </p>
+
+            </div>
+
+            <div class="certificate-card" data-aos="zoom-in">
+
+                <i class="fa-brands fa-angular"></i>
+
+                <h3>Modern Frontend</h3>
+
+                <p>
+                    Angular, Bootstrap, JavaScript, HTML5 and Responsive Design.
+                </p>
+
+            </div>
+
+            <div class="certificate-card" data-aos="zoom-in" data-aos-delay="100">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h3>Problem Solving</h3>
+
+                <p>
+                    Strong debugging, optimization and software architecture skills.
                 </p>
 
             </div>
@@ -937,49 +1247,76 @@
     </div>
 
 </section>
-<!-- ================= CONTACT CTA ================= -->
 
-<section class="cta">
+<!-- ================= CTA ================= -->
 
-    <div class="cta-content">
-
-        <h2>Interested in working together?</h2>
-
-        <p>
-            I'm available for Full-Time opportunities,
-            freelance projects, enterprise application development,
-            and modern .NET solutions.
-        </p>
-
-        <a href="#contact" class="btn-primary">
-            Contact Me
-        </a>
-
-    </div>
-
-</section><!-- ================= CONTACT ================= -->
-
-<section class="contact" id="contact">
+<section class="cta section">
 
     <div class="container">
 
-        <div class="section-heading">
+        <div class="cta-content" data-aos="zoom-in">
+
+            <h2>
+                Let's Build Something Amazing Together
+            </h2>
+
+            <p>
+
+                I'm available for Full-Time jobs,
+                Freelance Projects,
+                Enterprise Applications,
+                Government Projects
+                and Modern .NET Development.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="#contact" class="btn-primary">
+
+                    Contact Me
+
+                </a>
+
+                <a href="assets/resume.pdf"
+                   class="btn-secondary"
+                   download>
+
+                    Download Resume
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+
+<section class="contact section" id="contact">
+
+    <div class="container">
+
+        <div class="section-title section-heading">
 
             <h5>Contact</h5>
 
             <h2>Let's Work Together</h2>
 
             <p>
-                Looking for a .NET Developer? Feel free to contact me.
+                Looking for a Full Stack .NET Developer?
+                Feel free to contact me anytime.
             </p>
 
         </div>
 
         <div class="contact-wrapper">
 
-            <!-- Left Side -->
+            <!-- Left -->
 
-            <div class="contact-info">
+            <div class="contact-info" data-aos="fade-right">
 
                 <div class="info-box">
 
@@ -989,7 +1326,9 @@
 
                         <h3>Email</h3>
 
-                        <p>acpakashverma@gmail.com</p>
+                        <a href="mailto:acpakashverma@gmail.com">
+                            acpakashverma@gmail.com
+                        </a>
 
                     </div>
 
@@ -1003,7 +1342,9 @@
 
                         <h3>Phone</h3>
 
-                        <p>+91 9520232324</p>
+                        <a href="tel:+919520232324">
+                            +91 9520232324
+                        </a>
 
                     </div>
 
@@ -1025,113 +1366,123 @@
 
                 <div class="contact-social">
 
-                    <a href="https://github.com/akashverma1719" target="_blank">
+                    <a href="https://github.com/akashverma1719"
+                        target="_blank" rel="noopener noreferrer">
+
                         <i class="fab fa-github"></i>
+
                     </a>
 
-                    <a href="https://www.linkedin.com/in/akash-verma-5b7303209/" target="_blank">
+                    <a href="https://www.linkedin.com/in/akash-verma-5b7303209/"
+                        target="_blank" rel="noopener noreferrer">
+
                         <i class="fab fa-linkedin"></i>
+
                     </a>
 
                     <a href="mailto:acpakashverma@gmail.com">
-                        <i class="fas fa-envelope"></i>
+
+                        <i class="fa-solid fa-envelope"></i>
+
                     </a>
 
                 </div>
 
             </div>
 
-            <!-- Right Side -->
+            <!-- Right -->
 
-            <form class="contact-form" id="contactForm">
+            <form class="contact-form"
+                id="contactForm"
+                data-aos="fade-left">
 
-    <input type="text" id="name" placeholder="Your Name" required>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required>
 
-    <input type="email" id="email" placeholder="Your Email" required>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required>
 
-    <input type="text" id="subject" placeholder="Subject" required>
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Subject"
+                    required>
 
-    <textarea id="message" placeholder="Write your message..." required></textarea>
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required></textarea>
 
-    <button type="button" id="sendWhatsapp">
-        Send Message
-    </button>
+                <button
+                    type="button"
+                    id="sendWhatsapp"
+                    class="btn-primary">
 
-</form>
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Send via WhatsApp
+
+                </button>
+
+            </form>
 
         </div>
 
     </div>
 
 </section>
+
 <!-- ================= FOOTER ================= -->
+
 <footer>
 
     <div class="container">
 
-        <h2>Akash Verma</h2>
+        <h2>
+
+            Akash Verma
+
+        </h2>
 
         <p>
 
             Full Stack .NET Developer
 
         </p>
-
-        <div class="footer-social">
-
-            <a href="https://github.com/akashverma1719"><i class="fab fa-github"></i></a>
-
-            <a href="https://www.linkedin.com/in/akash-verma-5b7303209/"><i class="fab fa-linkedin"></i></a>
-
-
-        </div>
-
         <p class="copy">
 
-            © 2026 Akash Verma. All Rights Reserved.
+            © 2026 Akash Verma.
+            All Rights Reserved.
 
         </p>
 
     </div>
 
 </footer>
+
+<!-- Scroll Top -->
+
 <button id="topBtn">
 
-<i class="fa-solid fa-arrow-up"></i>
+    <i class="fa-solid fa-arrow-up"></i>
 
 </button>
 
+<!-- Custom Cursor -->
 
-    <!-- Typed JS -->
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://unpkg.com/i18next@23.15.1/dist/umd/i18next.min.js"></script>
-    <script src="js/script.js"></script>
 <div id="cursor"></div>
-<!-- GSAP -->
 
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js">
-</script>
-
-<!-- AOS -->
-
-<script
-src="https://unpkg.com/aos@2.3.4/dist/aos.js">
-</script>
-
-<script>
-
-AOS.init({
-
-duration:900,
-
-once:true
-
-});
-
-</script>
 <!-- Google Translate -->
+
+<div id="google_translate_element"
+style="display:none;"></div>
 
 <script>
 
@@ -1141,68 +1492,304 @@ function googleTranslateElementInit(){
 
         pageLanguage:'en',
 
+        includedLanguages:'en,hi,fr,de,es,ja,zh-CN,ar',
+
         autoDisplay:false
 
-    },'google_translate_element');
-
-}
-/*=========================================
-        GOOGLE TRANSLATE
-=========================================*/
-
-const languageSwitcher = document.getElementById("languageSwitcher");
-
-function changeGoogleTranslate(lang){
-
-    const interval = setInterval(() => {
-
-        const select = document.querySelector(".goog-te-combo");
-
-        if(select){
-
-            select.value = lang;
-
-            select.dispatchEvent(new Event("change"));
-
-            clearInterval(interval);
-
-        }
-
-    },500);
+    }, 'google_translate_element');
 
 }
 
-/* Change Language */
+</script>
 
-languageSwitcher.addEventListener("change",function(){
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    const lang = this.value;
+<script>
 
-    localStorage.setItem("portfolioLanguage",lang);
+function getGoogTransCookieLang(){
 
-    changeGoogleTranslate(lang);
+    const match = document.cookie.match(/googtrans=\/en\/([a-zA-Z\-]+)/);
 
-});
+    return match ? match[1] : null;
 
-/* Load Saved Language */
+}
 
-window.addEventListener("load",()=>{
+function setGoogTransCookie(lang){
 
-    const saved = localStorage.getItem("portfolioLanguage");
+    const value = "/en/" + lang;
 
-    if(saved){
+    document.cookie = "googtrans=" + value + "; path=/";
 
-        languageSwitcher.value = saved;
+    document.cookie = "googtrans=" + value + "; path=/; domain=" + location.hostname;
 
-        changeGoogleTranslate(saved);
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+debugger;
+    const langSwitcher = document.getElementById("languageSwitcher");
+
+    if (!langSwitcher) return;
+
+    const current = getGoogTransCookieLang();
+
+    if (current) {
+
+        langSwitcher.value = current;
 
     }
+
+    langSwitcher.addEventListener("change", function(){
+
+        const lang = this.value;
+
+        setGoogTransCookie(lang);
+
+       <!-- location.reload(); 
+
+    });
 
 });
 
 </script>
 
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- ================= JS LIBRARIES ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+if (typeof AOS !== "undefined") {
+AOS.init({
+    duration:900,
+    once:true
+});
+}
+
+</script>
+
+<!-- ================= LOADER ================= -->
+
+<script>
+
+window.addEventListener("load",function(){
+
+    const loader=document.getElementById("loader");
+
+    setTimeout(()=>{
+
+        loader.classList.add("hide");
+
+    },1200);
+
+});
+
+</script>
+
+<!-- ================= MOBILE MENU ================= -->
+
+<script>
+
+const menuBtn=document.getElementById("menuBtn");
+
+const navLinks=document.getElementById("navLinks");
+
+menuBtn.addEventListener("click",()=>{
+
+    navLinks.classList.toggle("active");
+
+    menuBtn.classList.toggle("open");
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove("active");
+
+        menuBtn.classList.remove("open");
+
+    });
+
+});
+
+</script>
+
+<!-- ================= DARK MODE ================= -->
+
+<script>
+
+const themeBtn=document.getElementById("themeBtn");
+
+const body=document.body;
+
+const icon=themeBtn.querySelector("i");
+
+if(localStorage.getItem("theme")=="light"){
+
+    body.classList.add("light");
+
+    icon.className="fa-solid fa-sun";
+
+}
+
+themeBtn.onclick=function(){
+
+    body.classList.toggle("light");
+
+    if(body.classList.contains("light")){
+
+        icon.className="fa-solid fa-sun";
+
+        localStorage.setItem("theme","light");
+
+    }
+
+    else{
+
+        icon.className="fa-solid fa-moon";
+
+        localStorage.setItem("theme","dark");
+
+    }
+
+}
+
+</script>
+
+<!-- ================= TYPING EFFECT ================= -->
+
+<script>
+
+new Typed("#typing",{
+
+strings:[
+
+"Full Stack .NET Developer",
+
+"ASP.NET MVC Developer",
+
+".NET Core Developer",
+
+"Angular Developer",
+
+"REST API Developer",
+
+"SQL Server Expert"
+
+],
+
+typeSpeed:60,
+
+backSpeed:35,
+
+backDelay:1500,
+
+loop:true
+
+});
+
+</script>
+
+<!-- ================= BACK TO TOP ================= -->
+
+<script>
+
+const topBtn=document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>300){
+
+topBtn.classList.add("show");
+
+}
+
+else{
+
+topBtn.classList.remove("show");
+
+}
+
+});
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+</script>
+
+<!-- ================= ACTIVE MENU ================= -->
+
+<script>
+
+const sections=document.querySelectorAll("section");
+
+const navItems=document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+const top=section.offsetTop-150;
+
+if(pageYOffset>=top){
+
+current=section.getAttribute("id");
+
+}
+
+});
+
+navItems.forEach(link=>{
+
+link.classList.remove("active");
+
+if(link.getAttribute("href")=="#"+current){
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+<!-- ================= STICKY NAVBAR ================= -->
+
+<script>
+
+window.addEventListener("scroll",()=>{
+
+document.querySelector(".navbar").classList.toggle(
+
+"sticky",
+
+window.scrollY>50
+
+);
+
+});
+
+</script>
+<script src="js/script.js"></script>
+
 </body>
 
 </html>
